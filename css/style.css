@@ -9,11 +9,6 @@ body {
     font-size: 16px;
 }
 
-html,
-body {
-    height: 100%;
-}
-
 .container {
     width: 800px;
     min-width: 100%;
@@ -28,6 +23,45 @@ body {
     color: #fff;
     position: relative;
     padding: 40px 20px;
+}
+
+.searchbox {
+    position: relative;
+    height: 40px;
+}
+
+.searchinput {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    width: 35px;
+    opacity: 0;
+    transition: all 300ms;
+
+}
+
+.searchinput.act {
+    width: 70%;
+    opacity: 1;
+}
+
+.searchinput input {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 5px 15px;
+}
+
+.searchbox span {
+    font-size: 2em;
+    cursor: pointer;
+    margin-bottom: 0.5em;
+    position: absolute;
+    z-index: 2;
+    right: 0;
 }
 
 .cityname {
@@ -97,27 +131,70 @@ body {
 
 /* --------정보 박스----------- */
 
-#desc2{
+#desc2 {
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     margin: 0 -15px;
 }
 
 .twotemp {
-    margin: 15px 3px;
-    background-color: rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    padding: 10px 15px;
+    margin: 1px -10px 1px;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px;
 
 }
-.temp2{
-   text-align: center;
+
+.twotemp.twotemp-title {
+    margin-top: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 1.3em;
+    font-weight: 700;
 }
 
-.info{
-    padding: 5px;
-    font-size: 18px;
+.twotemp.twotemp-body {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
-.scrow>div:last-child{
-    padding-right: 1.2em;
-text-align: end;
+
+.twotemp-body ul {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+
+}
+
+.twotemp-body li {
+    width: 50%;
+
+}
+
+.twotemp.threetemp-title {
+    margin-top: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+.twotemp.threetemp-body {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.days {
+    font-size: 0.9em;
+    font-weight: 100;
+}
+
+.times {
+    font-size: 1.2em;
+
+}
+
+.icons {
+    padding: 8px 0;
+}
+
+.icons i {
+    font-size: 2.5em;
 }

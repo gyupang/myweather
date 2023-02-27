@@ -7,3 +7,5 @@
     2.android 용 app으로 제작 (android studio - java)
                 iso(스캐치)
     3.안드로이드앱 weather.apk
+
+날씨앱을 안드로이드로 개발
