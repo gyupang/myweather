@@ -37,38 +37,41 @@
         <p class="text-center time" id="time">오후 5시 50분</p>
         <div class="tempbox mt-5">
             <div class="nowtemp" id="nowtemp">
-                <i class="wi wi-day-sunny"></i>
+                <div id="icon"><i class="wi wi-day-sunny"></i></div>
                 <p class="desc" id="desc">햇볕은 쨍쨍</p>
             </div>
             <div class="row">
                 <div class="col-6">
-                    <p class="temp" id="temp">20°</p>
-                    <span class="min-temp" id="min-temp">
-                        <i class="wi wi-thermometer text-primary text-shadow"></i> -30°
+                    <p class="temp" id="temp">-20°</p>
+                    <span class="min-temp">
+                        <i class="wi wi-thermometer text-primary txt-shadow"></i>
+                        <span id="min-temp">-50</span>°C
                     </span>
-                    <span class="max-temp" id="max-temp">
-                        <i class="wi wi-thermometer text-danger text-shadow"></i> 10°
+                    <span class="max-temp">
+                        <i class="wi wi-thermometer text-danger txt-shadow"></i>
+                        <span id="max-temp">-10</span>°C
                     </span>
-
                 </div>
+
                 <div class="col-3 ntemp">
                     <h1>내일</h1>
                     <div class="wi-icon">
-                        <i class="wi wi-lightning"></i>
+                        <i class="wi wi-day-rain"></i>
                     </div>
                     <div class="wi-text">
-                        <span class="nm-temp">최저 -10°</span>
-                        <span class="nm-temp">최고 40°</span>
+                        <span class="nm-temp">최저51°</span>
+                        <span class="nm-temp">최고100°</span>
                     </div>
                 </div>
+
                 <div class="col-3 ntemp">
                     <h1>모레</h1>
                     <div class="wi-icon">
-                        <i class="wi wi-strong-wind"></i>
+                        <i class="wi wi-day-rain"></i>
                     </div>
                     <div class="wi-text">
-                        <span class="nm-temp">최저 -4°</span>
-                        <span class="nm-temp">최고 16°</span>
+                        <span class="nm-temp">최저51°</span>
+                        <span class="nm-temp">최고100°</span>
                     </div>
                 </div>
             </div>
@@ -80,13 +83,12 @@
             </div>
             <div class="twotemp twotemp-body">
                 <ul>
-                    <li><label>체감온도 : </label>
-                        <span id="feels_like"></span>
-                    </li>
-                    <li><label>해뜨는시각 : </label></li>
-                    <li><label>해지는시각 : </label></li>
-                    <li><label>풍향 : </label></li>
-                    <li><label>풍속 : </label></li>
+                    <li><label>체감온도 : </label><span id="feels_like"></span></li>
+                    <li></li>
+                    <li><label>해뜨는시각 : </label><span id="sunrise"></span></li>
+                    <li><label>해지는시각 : </label><span id="sunset"></span></li>
+                    <li><label>풍속 : </label><span id="windspeed"></span></li>
+                    <li><label>풍향 : </label><span id="winddeg"></span></li>
                 </ul>
             </div>
             <div class="twotemp threetemp-title">

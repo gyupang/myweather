@@ -7,6 +7,7 @@ body {
     padding: 0;
     font-family: 'notoSansKr', sans-serif;
     font-size: 16px;
+    overflow-x: hidden;
 }
 
 .container {
@@ -19,6 +20,7 @@ body {
     background-image: url(/0221weather/design/bg.png),
         linear-gradient(to right, #2f77b3, #61bbdc);
     background-repeat: no-repeat;
+    background-position: center bottom;
     background-size: 100%;
     color: #fff;
     position: relative;
@@ -53,6 +55,7 @@ body {
     border: 0;
     outline: 0;
     padding: 5px 15px;
+    color:#fff;
 }
 
 .searchbox span {
@@ -123,24 +126,18 @@ body {
     font-size: 1.5em;
 }
 
-.wi-text {
-    font-size: 1em;
-    font-weight: 300;
-    text-align: left;
+.wi-text{
+    font-size:0.9em;
+    font-weight:300;
+    text-align:left;
 }
 
 /* --------정보 박스----------- */
 
-#desc2 {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-    margin: 0 -15px;
-}
-
-.twotemp {
-    margin: 1px -10px 1px;
-    background: rgba(0, 0, 0, 0.2);
-    padding: 20px;
-
+.twotemp{
+    margin:2px -10px 0px;
+    padding:20px;
+    background:rgba(0,0,0,0.3);
 }
 
 .twotemp.twotemp-title {
@@ -168,19 +165,21 @@ body {
 
 }
 
-.twotemp.threetemp-title {
-    margin-top: 10px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    font-size: 1.3em;
-    font-weight: 700;
-}
+.threetemp-title{
+    margin-top:8px;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+    font-size:1.3em;
+    font-weight:700;
+ }
 
-.twotemp.threetemp-body {
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+ .threetemp-body{
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;  
 }
-
+.time-weather{
+    margin:0 15px;
+}
 .days {
     font-size: 0.9em;
     font-weight: 100;
@@ -197,4 +196,7 @@ body {
 
 .icons i {
     font-size: 2.5em;
+}
+.temps{
+    font-size:1.5em;
 }
